@@ -1,41 +1,71 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { SITE_NAME } from 'siteConstants';
+
+import { KeyedListMapper } from 'core';
 import {
   Container,
-  StyledInput,
-  SiteName,
   LeftBox,
   CenterBox,
   RightBox,
-  ActionLink,
+  StyledButton,
+  StyledLogo,
+  Arrow,
+  UserContainer,
 } from './styles';
+
+const BUTTONS = [
+  {
+    accent: true,
+    icon: 'plusSquare',
+    label: 'Get a Quote',
+  },
+  {
+    icon: 'tracking',
+    label: 'Tracking',
+    selected: true,
+  },
+  {
+    icon: 'billing',
+    label: 'Billing',
+  },
+  {
+    icon: 'person',
+    label: 'Account',
+  },
+  {
+    icon: 'help',
+    label: 'Help',
+  },
+];
 
 export default function Header(props) {
   const [query] = useState(null);
-  const { className, searchDisabled } = props;
+  const { className } = props;
   return (
     <Container className={className}>
-      <LeftBox>
-        <SiteName to="/">{SITE_NAME}</SiteName>
-      </LeftBox>
-      <CenterBox>
-        {!searchDisabled && <StyledInput value={query} type="search" />}
-      </CenterBox>
-      <RightBox>
-        <ActionLink to="/review">Submit Review</ActionLink>
-        <ActionLink to="/login">Login</ActionLink>
-      </RightBox>
+      <StyledLogo />
+      <KeyedListMapper list={BUTTONS}>
+        {(key, item) => (
+          <StyledButton
+            accent={item.accent}
+            icon={item.icon}
+            isSelected={item.selected}
+          >
+            {item.label}
+          </StyledButton>
+        )}
+      </KeyedListMapper>
+      <UserContainer>
+        <Arrow />
+      </UserContainer>
     </Container>
   );
 }
 
 Header.propTypes = {
   className: PropTypes.string,
-  searchDisabled: PropTypes.bool,
 };
 
 Header.defaultProps = {
   className: undefined,
-  searchDisabled: false,
 };

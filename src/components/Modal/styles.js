@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CARD, TEXT_TITLE, TEXT_BODY_SMALL } from 'style/mixins';
+import { CARD, TEXT_BODY, TEXT_BODY_SMALL } from 'style/mixins';
 import { MAX_Z_INDEX, SPACING_LARGE, SPACING_MEDIUM } from 'style/constants';
 import Button, { BUTTON_TYPES } from 'components/Button';
 
@@ -24,7 +24,7 @@ export const Actions = styled.div`
 `;
 
 export const Header = styled.div`
-  ${TEXT_TITLE}
+  ${TEXT_BODY}
 `;
 
 export const Body = styled.div`

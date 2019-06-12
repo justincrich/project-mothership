@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Label from 'components/Label';
-import { TEXT_INPUT } from 'style/mixins';
 import { rgba } from 'style/colors';
 import {
   OPACITY_DISABLED,
@@ -39,7 +38,6 @@ const LabelRow = styled.div`
 `;
 
 const FieldRow = styled.div`
-  ${TEXT_INPUT}
   padding: ${SPACING_SMALL};
   display: flex;
   flex-direction: row;

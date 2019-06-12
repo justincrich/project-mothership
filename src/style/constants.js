@@ -13,31 +13,27 @@ export const COLOR_ACCENT = props => props.theme.colors.accent;
 export const DESKTOP_MIN_WIDTH = '1000px';
 export const TABLET_MIN_WIDTH = '500px';
 
-// FONT FAMILIES
-export const FONT_FAMILY = props => `${props.theme.fontFamily}, sans-serif`;
+// FONT WEIGHTS
+export const FONT_WEIGHT_BOLD = 700;
+export const FONT_WEIGHT_LITE = 300;
 
 // OPACITY
 export const OPACITY_NORMAL = 1;
 export const OPACITY_PASSIVE = 0.6;
 export const OPACITY_DISABLED = 0.3;
 
-// FONT SIZES
-export const FONT_SIZE_SMALL = '12px';
-export const FONT_SIZE_MEDIUM = '16px';
-export const FONT_SIZE_LARGE = '24px';
-
 // BORDERS
-export const BORDER_RADIUS = '5px';
+export const BORDER_RADIUS = '3px';
 
 // SPACING
 export const SPACING_X_SMALL = '5px';
-export const SPACING_SMALL = '10px';
-export const SPACING_MEDIUM = '20px';
-export const SPACING_LARGE = '30px';
+export const SPACING_SMALL = '15px';
+export const SPACING_MEDIUM = '25px';
+export const SPACING_LARGE = '50px';
 export const SPACING_X_LARGE = '80px';
 
 // MISC
-export const HEADER_HEIGHT_PX = 70;
+export const HEADER_HEIGHT_PX = 56;
 export const HEADER_HEIGHT = `${HEADER_HEIGHT_PX}px`;
 export const TAG_HEIGHT = '30px';
 

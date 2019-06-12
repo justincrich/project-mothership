@@ -1,5 +1,9 @@
 import { css } from 'styled-components';
 
+export const DARK_GRADIENT = css`
+  background: linear-gradient(0deg, #54575e 0%, #484b54 50%);
+`;
+
 export const CARD = css`
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);

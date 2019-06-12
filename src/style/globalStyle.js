@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
     #root {
         height: 100%;
         width: 100%;
@@ -55,9 +57,6 @@ const GlobalStyle = createGlobalStyle`
     html, body, #__next {
         width: 100%;
         height: 100%;
-    }
-    html {
-        font-size: 62.5%;
     }
     a{
         text-decoration: none;
