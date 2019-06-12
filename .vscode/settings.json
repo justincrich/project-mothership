@@ -1,0 +1,47 @@
+{
+    "git.ignoreLimitWarning": true,
+    "html.format.wrapLineLength": 80,
+    "editor.tabSize": 2,
+    "workbench.tree.indent": 4,
+    "javascript.format.enable": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    "editor.minimap.maxColumn": 100,
+    "breadcrumbs.enabled": true,
+    "typescript.validate.enable": false,
+    "typescript.suggest.enabled": false,
+    "javascript.validate.enable": false,
+    "typescript.format.enable": false,
+    "javascript.format.insertSpaceAfterCommaDelimiter": false,
+    "todohighlight.keywords":[
+        {
+            "text": "TODO:",
+            "color": "#000",
+            "backgroundColor": "orange"
+        },
+        {
+            "text": "FIXME:",
+            "color": "white",
+            "backgroundColor": "red"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#000",
+            "backgroundColor": "yellow"
+        }
+    ],
+    "todohighlight.exclude": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**",
+        "**/.babelrc"
+    ]
+}

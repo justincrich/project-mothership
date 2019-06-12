@@ -1,0 +1,18 @@
+{
+    "presets": [
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "inline-react-svg",
+        "@babel/plugin-proposal-optional-chaining",
+        [
+            "styled-components",
+            {
+                "ssr": "false",
+                "displayName": "true",
+                "preprocess": "false",
+                "minify": false
+            }
+        ],
+    ]
+}

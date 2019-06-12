@@ -1,0 +1,17 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    "emotion",
+    "inline-react-svg",
+    "@babel/plugin-proposal-optional-chaining",
+    [
+      "styled-components",
+      {
+        "ssr": "false",
+        "displayName": "true",
+        "preprocess": "false",
+        "minify": false
+      }
+    ]
+  ]
+}
