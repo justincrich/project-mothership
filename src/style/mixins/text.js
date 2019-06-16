@@ -8,8 +8,8 @@ export const TEXT_FONT_FAMILY = css`
 export const TEXT_NORMAL = css`
   ${TEXT_FONT_FAMILY};
   color: ${props => props.theme.colors.fontColorLightBkg};
-  font-weight: ${FONT_WEIGHT_LITE};
   font-style: normal;
+  font-weight: ${FONT_WEIGHT_LITE};
 `;
 
 export const TEXT_BODY = css`
@@ -30,4 +30,11 @@ export const TEXT_HEADER = css`
   font-size: ${props => props.theme.fonts.sizes.header};
   line-height: ${props => props.theme.fonts.sizes.headerHeight};
   font-weight: ${FONT_WEIGHT_BOLD};
+`;
+
+export const TEXT_INPUT = css`
+  ${TEXT_NORMAL}
+  font-weight: ${FONT_WEIGHT_BOLD};
+  font-size: ${props => props.theme.fonts.sizes.input};
+  line-height: ${props => props.theme.fonts.sizes.inputHeight};
 `;

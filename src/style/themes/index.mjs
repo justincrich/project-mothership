@@ -1,7 +1,7 @@
 const ACCENT = '#3755B0';
-const BORDER = '#DDDDDD';
 const WHITE = '#FFFFFF';
 const BLACK = '#000000';
+const BORDER = '#DDDDDD';
 const themes = {
   default: {
     colors: {
@@ -27,6 +27,8 @@ const themes = {
         bodySMHeight: '15px',
         header: '20px',
         headerHeight: '24px',
+        input: '15.7586px',
+        inputHeight: '19px',
       },
     },
   },

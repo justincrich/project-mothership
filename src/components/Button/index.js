@@ -12,11 +12,11 @@ const Container = styled.button`
   background-color: ${props =>
     props.isSelected ? rgba(props.theme.colors.white, 0.2) : 'transparent'};
   display: flex;
-  padding: 0 12px;
   flex-flow: row nowrap;
   align-items: center;
   align-content: center;
   height: 31px;
+  padding: 0;
   ${props =>
     props.accent &&
     `

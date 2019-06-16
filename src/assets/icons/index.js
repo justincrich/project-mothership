@@ -4,6 +4,6 @@ export { ReactComponent as downArrow } from './downArrow.svg';
 export { ReactComponent as billing } from './billing.svg';
 export { ReactComponent as help } from './help.svg';
 export { ReactComponent as person } from './person.svg';
-export { ReactComponent as plus } from './plus.svg';
+export { ReactComponent as plusCircle } from './plusCircle.svg';
 export { ReactComponent as search } from './search.svg';
 export { ReactComponent as tracking } from './tracking.svg';
