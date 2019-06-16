@@ -1,7 +1,9 @@
 
-# project-boilerplate
+# Mothership Programming Challenge
 
 ## Install Instructions
-* clone
+* clone repo
 * install dependencies
-* add .env to ```.gitignore```
+  * npm: ```npm run install```
+  * yarn: ```yarn install```
+* add .env data (is sent seperately)
