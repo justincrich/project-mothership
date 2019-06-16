@@ -6,7 +6,8 @@
 * install dependencies
  * npm: ```npm run install```
  * yarn: ```yarn install```
-* add ```.env``` file and paste provided data (sent separately)
+* Add add ```.env``` file and paste environment variables provided
+  * in base directory (not '''src''')
 
 ## Run
 * run app
